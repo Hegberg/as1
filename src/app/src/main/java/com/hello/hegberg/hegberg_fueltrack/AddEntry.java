@@ -97,7 +97,7 @@ public class AddEntry extends AppCompatActivity {
     }
 
     //Most of code from lab 3, edited to work with my application, loads all entrys into entries
-    public void loadFromFile() {
+    private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput("file.sav");
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
@@ -111,7 +111,7 @@ public class AddEntry extends AppCompatActivity {
     }
 
     //Most of code from lab 3, edited to work with my application, saves all entrys in entries into a file
-    public void saveInFile() {
+    private void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME, 0);
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));

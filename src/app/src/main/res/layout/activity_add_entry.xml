@@ -158,6 +158,17 @@
         android:layout_alignRight="@+id/add_fuel_amount"
         android:layout_alignEnd="@+id/add_fuel_amount" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Decimals will be correctly rounded by the program"
+        android:id="@+id/UserHelpAdd"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/add_fuel_unit_cost"
+        android:layout_alignRight="@+id/done_add"
+        android:layout_alignEnd="@+id/done_add" />
+
 </RelativeLayout>
 
 

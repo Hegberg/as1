@@ -20,7 +20,23 @@ public class LogEntryTest extends ActivityInstrumentationTestCase2 {
         double fuelTotalCost = 5.0;
 
         LogEntry testing = new LogEntry(date, station, odometer, fuelGrade, fuelAmount, fuelUnitCost, fuelTotalCost);
-        testing.setAll(date, station, odometer, fuelGrade, fuelAmount, fuelUnitCost, fuelTotalCost);
+
+        String date2 = "2010-01-02";
+        String station2 = "Costcoo";
+        double odometer2 = 24.4;
+        String fuelGrade2 = "higher";
+        double fuelAmount2 = 20.2;
+        double fuelUnitCost2 = 25.5;
+        double fuelTotalCost2 = 5.2;
+        testing.setAll(date2, station2, odometer2, fuelGrade2, fuelAmount2, fuelUnitCost2, fuelTotalCost2);
+
+        assertNotSame(testing.getDate(), date);
+        assertNotSame(testing.getStation(), station);
+        assertNotSame(testing.getOdometer(), odometer);
+        assertNotSame(testing.getFuelGrade(), fuelGrade);
+        assertNotSame(testing.getFuelAmount(), fuelAmount);
+        assertNotSame(testing.getFuelUnitCost(), fuelUnitCost);
+        assertNotSame(testing.getFuelCost(), fuelTotalCost);
     }
 
     public void testGetDate() {

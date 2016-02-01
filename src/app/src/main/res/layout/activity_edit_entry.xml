@@ -163,5 +163,14 @@
         android:layout_alignRight="@+id/edit_fuel_amount"
         android:layout_alignEnd="@+id/edit_fuel_amount" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Decimals will be correctly rounded by the program"
+        android:id="@+id/UserHelpEdit"
+        android:layout_above="@+id/cancel_edit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

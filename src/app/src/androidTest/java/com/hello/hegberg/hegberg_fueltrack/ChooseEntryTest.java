@@ -39,16 +39,22 @@ public class ChooseEntryTest extends ActivityInstrumentationTestCase2 {
         super(ChooseEntry.class);
     }
 
+    //test if class successfully initializes
+    public void testCreate() {
+        ChooseEntry tester = new ChooseEntry();
+        assertNotNull(tester);
+    }
+
+
     public void testAddButtons() {
         ChooseEntry tester = new ChooseEntry();
         int number = 4;
-        RadioButton[] radioGrouper = new RadioButton[number];
-        //tester.radioGroup = radioGrouper;
+
+        //fails do to null pointer exceptions, even though function works properly
         tester.addButtons(number);
     }
 
-    public void testOnStart() {
-        ChooseEntry tester = new ChooseEntry();
-        testOnStart();
-    }
+
+    //Can't test loadFromFile since it is private, also returns null exception if you make it public and try to test
+
 }

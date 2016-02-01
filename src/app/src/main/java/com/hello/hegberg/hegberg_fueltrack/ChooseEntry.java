@@ -32,10 +32,6 @@ public class ChooseEntry extends AppCompatActivity {
     private LogEntry currentEntry;
     private Double totalCost = 0.0;
 
-    public void ChooseEntry(){
-
-    }
-
     protected void onStart() {
         super.onStart();
         //loads all entries
