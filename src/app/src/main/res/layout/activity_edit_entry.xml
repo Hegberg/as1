@@ -38,10 +38,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Date (yyyy-mm-dd): "
         android:id="@+id/date"
+        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="61dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -167,10 +167,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Decimals will be correctly rounded by the program"
+        android:layout_marginTop="15dp"
+        android:text="Decimals will be correctly rounded by the program if too many decimals are entered"
         android:id="@+id/UserHelpEdit"
-        android:layout_above="@+id/cancel_edit"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/fuel_unit_cost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

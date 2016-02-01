@@ -2,7 +2,7 @@ Youtube Video Link
 a note about the video, made some small ui changes (added a 
 text field to add_entry view and edit_entry view, to help with 
 user understanding) after the video, so there is a small ui 
-difference from the app to the video. No software changes though.
+difference from the app to the video. No code changes though.
 
 https://youtu.be/5qiqdZiyKVY
 
